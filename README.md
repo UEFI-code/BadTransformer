@@ -12,6 +12,6 @@ Image Classfication
 
 Image Generation
 
-NLP
+Large Language Model [pyllama_Hack](https://github.com/UEFI-code/pyllama_Hack)
 
 ...
