@@ -2,6 +2,7 @@
 
 Bad Transformer is a simpled and easy-understand transfomer proposed by ```Shizhuo Zhang (SuperHacker UEFI)```, and may have same effects as the orignal transformer.
 
+![Figure of Struct](figure_NLP.png)
 ![Figure of Struct](figure.png)
 
 ## Using Sence
