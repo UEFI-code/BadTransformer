@@ -1,13 +1,13 @@
 import torch
 import torch.nn as nn
 class myBadTransfomerBlock(nn.Module):
-    def __init__(self):
+    def __init__(self, dim=4096):
         super().__init__()
-        self.li1 = nn.Linear(4096, 4096, bias=False)
-        self.li2 = nn.Linear(4096, 4096, bias=False)
-        self.li3 = nn.Linear(4096, 4096, bias=False)
-        self.li4 = nn.Linear(4096, 4096, bias=False)
-        self.out = nn.Linear(4096, 4096, bias=False)
+        self.li1 = nn.Linear(dim, dim, bias=False)
+        self.li2 = nn.Linear(dim, dim, bias=False)
+        self.li3 = nn.Linear(dim, dim, bias=False)
+        self.li4 = nn.Linear(dim, dim, bias=False)
+        self.out = nn.Linear(dim, dim, bias=False)
 
     def forward(self, x):
         xA, xB, xC = self.li1(x), self.li2(x), self.li3(x)
