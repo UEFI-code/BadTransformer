@@ -2,8 +2,9 @@
 
 Bad Transformer is a simpled and easy-understand transfomer proposed by ```Shizhuo Zhang (SuperHacker UEFI)```, and may have same effects as the orignal transformer.
 
+What's more, it generate semantic hybrid tensor and then maping to the space of prediction token embedding.
+
 ![Figure of Struct](figure_NLP.png)
-![Figure of Struct](figure.png)
 
 ## Using Sence
 
