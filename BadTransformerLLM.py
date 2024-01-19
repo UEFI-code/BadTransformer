@@ -14,6 +14,8 @@ class myBadTransfomerBlock(nn.Module):
             self.encodingGroupB.append(activation)
             self.encodingGroupC.append(nn.Linear(dim, dim, bias=False))
             self.encodingGroupC.append(activation)
+            self.decodingGroup.append(nn.Linear(dim, dim, bias=False))
+            self.decodingGroup.append(activation)
         self.debug = debug
         self.dim = dim
 
