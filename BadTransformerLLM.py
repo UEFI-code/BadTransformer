@@ -30,11 +30,11 @@ class myBadTransfomerBlock(nn.Module):
         return self.decodingGroup(xO)
 
 class myBadTransformerUnit(nn.Module):
-    def __init__(self, dim = 4096, encodingDeepth = 2, num_layers=2, debug=False):
+    def __init__(self, embeddingDim = 4096, embeddingDeepth = 2, num_layers=2, debug=False):
         super().__init__()
         self.badtrans = nn.Sequential()
         for _ in range(num_layers):
-            self.badtrans.append(myBadTransfomerBlock(dim=dim, deepth=encodingDeepth, debug=debug))
+            self.badtrans.append(myBadTransfomerBlock(dim=embeddingDim, deepth=embeddingDeepth, debug=debug))
 
     def forward(self, x):
         return self.badtrans(x)
