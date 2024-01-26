@@ -23,7 +23,7 @@ class BadGraphTransformerDown(nn.Module):
         x = torch.matmul(a.transpose(2, 3), a) # Here is to semantic hybrid.
         if self.debug:
             print(f'Debug: xSqure shape {x.shape}')
-        x = torch.matmul(x, a)
+        x = torch.matmul(a, x)
         x = self.convDecodingGroup(x)
         if self.normalization is not None:
             x = self.normalization(x)
@@ -51,7 +51,7 @@ class BadGraphTransformerUp(nn.Module):
         x = torch.matmul(a.transpose(2, 3), a) # Here is to semantic hybrid.
         if self.debug:
             print(f'Debug: xSqure shape {x.shape}')
-        x = torch.matmul(x, a)
+        x = torch.matmul(a, x)
         x = self.transConvDecodingGroup(x)
         if self.normalization is not None:
             x = self.normalization(x)
