@@ -1,0 +1,14 @@
+cff-version: 2.0.0
+message: If you use this model, please cite it as below.
+title: BadTransformer
+authors:
+  - family-names: Zhang
+    given-names: Shizhuo
+  - family-names: BadTransformer Team
+url: https://github.com/UEFI-code/BadTransformer
+preferred-citation:
+  type: neural network model
+  title: "BadTransformer: An open-source project demonstrating a simplified transformer model."
+  authors:
+    - family-names: Zhang
+      given-names: Shizhuo

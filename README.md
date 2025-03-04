@@ -1,19 +1,11 @@
-# Bad Transformer
+# BadTransformer
 
-Bad Transformer is a simpled and easy-understand transfomer proposed by ```Shizhuo Zhang (SuperHacker UEFI)```, and may have same effects as the orignal transformer.
+BadTransformer is a simplified and easy-to-understand transformer proposed by [Shizhuo Zhang](https://github.com/UEFI-code). It simplifies the encoder and decoder structures and changes the multi-head attention mechanism to a single-head attention mechanism, while still potentially achieving the same effects as the original transformer.
 
-What's more, it generate semantic hybrid tensor and then maping to the space of prediction token embedding.
-
-![Figure of Struct](figure.png)
+![Logo](./logo.png)
 
 ## Using Sence
 
-Image Resolution Upscaling: [Xresolution](https://github.com/UEFI-code/Xresolution), a 18KB model!
-
-Image Classfication
-
-Image Generation
-
-Large Language Model [pyllama_Hack](https://github.com/UEFI-code/pyllama_Hack)
+- Language Model [miniGPT](https://github.com/UEFI-code/miniGPT)
 
 ...
