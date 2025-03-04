@@ -12,9 +12,9 @@ class myBadTransfomerBlock(nn.Module):
     def forward(self, x):
         # x: [batch, tokens, embdim]
         y = x + self.positionEmbedding[:, :x.size(1)]
+        y = y / (y.norm(dim=-1, keepdim=True) + 1e-6)
         cmp_matrix = torch.matmul(y, y.transpose(1, 2))
         y = torch.matmul(cmp_matrix, y) # this step is hybird token's knowledge
-        y = y / y.size(1)
         return self.decoder(y)
 
 class myModel(nn.Module):
